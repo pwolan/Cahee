@@ -1,0 +1,112 @@
+.wrapper {
+    padding: 0;
+    margin: 0;
+    background-color: #00b1b1;
+    height: 300vh;
+}
+
+body {
+    height: 300vh;
+}
+
+header {
+    height: 100vh;
+    width: 100%;
+    background: url(../img/bg1.png);
+    background-size: cover;
+    background-position: 25% 0;
+    position: relative;
+}
+
+/* NAVIGATION */
+
+.nav__bar {
+    background-color: rgba(249, 248, 251, .8);
+    background-origin: border-box;
+    padding: 0 15%;
+
+}
+.nav__main a.nav-link {
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+@media (min-width: 576px) {
+    /* animation */
+
+    .nav__main a.nav-link:hover {
+        color: #666;
+    }
+
+    .nav__main ul li a {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .nav__main ul li a::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 80%;
+        height: 3px;
+        background-color: orange;
+        top: 20%;
+        left: -80%;
+        transition: .2s;
+    }
+
+    .nav__main ul li a:hover::after {
+        /* showing orange bar */
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.togglerbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* CONTENT IN HEADER */
+.header__content {
+    position: relative;
+    width: 300px;
+    margin: 0 auto;
+    padding-top: 30vh;
+}
+
+.header__content>* {
+    margin-top: 5px;
+}
+
+.header__content>h1 {
+    font-size: 3em;
+}
+
+.header__content>p {}
+
+.header__content>button {
+    background-color: #ff6033;
+    border: none;
+    padding: 10px 25px;
+    box-shadow: 0 0 3px black;
+    cursor: pointer;
+    color: white;
+    border-radius: 0;
+}
+
+@media (min-width: 576px) {
+    header {
+        background: url(../img/bg1big.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .header__content {
+        position: absolute;
+        left: 25%;
+    }
+}
