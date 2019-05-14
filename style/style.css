@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .wrapper {
     padding: 0;
     margin: 0;
@@ -65,10 +69,18 @@ body {
 }
 
 .togglerbtn {
+    color: #000;
+
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    outline: none;
+}
+
+.togglerbtn i {
+    display: block;
+    transform: scale(1.5);
 }
 
 /* CONTENT IN HEADER */
@@ -131,17 +143,104 @@ body {
 }
 
 #about>div {
-
+    margin: 0;
+    padding: 0;
 }
 
 .about__content {
     color: #fff;
 }
-.about__content > h1 {
+
+.about__content>h1 {
     font-size: 4em;
 }
 
-.about__content > p {
+.about__content>p {
     font-size: 1em;
     font-weight: 100;
+}
+
+/* SERVIECES */
+#servieces {
+    background-color: rgb(112, 191, 255);
+}
+
+#servieces>.row {
+    width: 100%;
+    padding: 50px 0;
+    margin: 0;
+
+    display: flex;
+    justify-content: center
+}
+
+.servieces__buttons {
+    padding-top: 40px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.servieces__buttons button {
+    display: flex;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    padding: 0;
+    width: 300px;
+    margin: 0 auto;
+    box-shadow: 0px 2px 7px 1px rgba(0, 0, 0, 0.75);
+
+    align-items: stretch;
+    justify-content: center;
+
+    margin-top: 15px;
+}
+
+.servieces__buttons span {
+    display: flex;
+    flex-basis: 100%;
+    padding: 0 10px;
+    height: 70px;
+    align-self: center;
+    font-weight: bold;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.servieces__buttons img {
+    display: block;
+    border-left: solid gray 1px;
+    padding: 20px 20px;
+    width: 35px;
+    height: 35px;
+    box-sizing: content-box;
+
+    align-self: stretch;
+}
+
+.servieces__img {
+    position: relative;
+    display: flex;
+
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 40px;
+}
+
+.servieces__img img {
+    width: 80%;
+}
+
+
+.servieces__img h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    color: white;
+    font-size: 4em;
+    width: 100%;
+    text-align: center;
 }
