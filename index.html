@@ -13,7 +13,10 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <!-- css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -22,6 +25,7 @@
         <header id="home">
             <nav class="navbar fixed-top navbar-expand-md pt-3 nav__bar">
                 <a href="#" class="navbar-brand ml-4"><img src="img/logo.png" alt=""></a>
+                
                 <!-- toggler -->
                 <button class="navbar-toggler navbar__button" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -35,22 +39,22 @@
                 <div class="collapse navbar-collapse nav__main" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#home">Home</a>
+                            <a class="nav-link" data-href="#home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#about">About</a>
+                            <a class="nav-link" data-href="#about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#servieces">Services</a>
+                            <a class="nav-link" data-href="#servieces">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Gallery</a>
+                            <a class="nav-link" data-href="#gallery">Gallery</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Blog</a>
+                            <a class="nav-link" data-href="#">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" data-href="#">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -66,9 +70,9 @@
         </header>
         <section id="about">
             <div class="row align-items-center justify-content-center col-12">
-                <img class="col-10 col-sm-8 col-md-5  col-lg-4 order-last order-md-first" src="img/imgAbout.png"
-                    alt="rasberry">
-                <div class=" col-10 col-md-5 col-lg-4  about__content">
+                <img class="col-10 col-sm-8 col-md-5  col-lg-4 order-last order-md-first " src="img/imgAbout.png"
+                    alt="rasberry" data-aos="fade-rigth">
+                <div class=" col-10 col-md-5 col-lg-4  about__content" data-aos="fade-left">
                     <h1>About us</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis alias facilis adipisci quis
                         esse molestias ut, corrupti dolore error sequi mollitia assumenda unde tenetur voluptatem.
@@ -82,7 +86,7 @@
         </section>
         <section id="servieces">
             <div class="row p-sm-3">
-                <div class="servieces__buttons order-last order-md-first p-md-4">
+                <div class="servieces__buttons order-last order-md-first p-md-4" data-aos="fade-left">
                     <button>
                         <span>Online shopping</span>
                         <img src="img/shopping.png" alt="">
@@ -101,10 +105,35 @@
                     </button>
 
                 </div>
-                <div class="p-md-4 servieces__img">
+                <div class="p-md-4 servieces__img" data-aos="fade-rigth">
                     <img src="img/logoServieces.png" alt="">
                     <h1>Our Servieces</h1>
                 </div>
+            </div>
+        </section>
+        <section id="gallery">
+            <div class="col-10 col-sm-8 col-md-6 col-lg-4 gallery__header" data-aos="fade-up">
+                <h1>Gallery</h1>
+                <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                    enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.</p>
+            </div>
+            <div class="gallery__content">
+                <figure>
+                    <img src="img/gallery/brzoskwinki.png" alt="peach">
+                </figure>
+                <figure>
+                    <img src="img/gallery/berries1.png" alt="berry">
+                </figure>
+                <figure>
+                    <img src="img/gallery/blackberry.png" alt="blackberry">
+                </figure>
+                <figure>
+                    <img src="img/gallery/berries2.png" alt="berry">
+                </figure>
+                <figure>
+                    <img src="img/gallery/apple.png" alt="apple">
+                </figure>
             </div>
         </section>
     </div>
@@ -124,7 +153,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-
+    <!-- scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
