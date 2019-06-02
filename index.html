@@ -25,7 +25,7 @@
         <header id="home">
             <nav class="navbar fixed-top navbar-expand-md pt-3 nav__bar">
                 <a href="#" class="navbar-brand ml-4"><img src="img/logo.png" alt=""></a>
-                
+
                 <!-- toggler -->
                 <button class="navbar-toggler navbar__button" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -51,10 +51,10 @@
                             <a class="nav-link" data-href="#gallery">Gallery</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-href="#">Blog</a>
+                            <a class="nav-link" data-href="#blog">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-href="#">Contact</a>
+                            <a class="nav-link" data-href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -112,7 +112,7 @@
             </div>
         </section>
         <section id="gallery">
-            <div class="col-10 col-sm-8 col-md-6 col-lg-4 gallery__header" data-aos="fade-up">
+            <div class="col-10 col-sm-8 col-md-6 col-lg-4 header" data-aos="fade-up">
                 <h1>Gallery</h1>
                 <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                     enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -135,9 +135,91 @@
                     <img src="img/gallery/apple.png" alt="apple">
                 </figure>
             </div>
+            <input class="servieces__button" type="button" value="VIEW MORE">
         </section>
-    </div>
+        <section id="subscribe">
+            <div class="subscribe__header col-12 col-sm-8 offset-sm-1 col-md-6 offset-md-2 col-lg-4">
+                <h1>Subscribe To Us</h1>
+                <p>Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Animi quasi similique ipsum veritatis at. Labore eum dolore, dicta quisquam.</p>
+            </div>
 
+            <form class="subscribe__form col-12 col-sm-11 offset-sm-1 col-md-10 offset-md-2">
+                <input type="email" class="col-10 offset-1  col-sm-8 offset-sm-0  col-md-6 col-lg-4"
+                    placeholder="Your email address">
+                <input type="button" value="SUBSCRIBE" class="btn">
+            </form>
+        </section>
+        <section id="blog">
+            <div class="col-10 col-sm-8 col-md-6 col-lg-4 blog__header" data-aos="fade-up">
+                <h1>Blog</h1>
+                <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                    enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.</p>
+            </div>
+            <div class="blog__gallery">
+                <figure>
+                    <h3 class="blog__date">20<br>NOV</h3>
+                    <h1 class="blog__article">Green Smoothies: Too Much of a Good Thing?</h1>
+                    <h2 class="blog__time">By Auskteez - 2 hours ago</h2>
+                    <img src="img/blog/blog1.png" alt="smoothie">
+                </figure>
+                <figure>
+                    <h3 class="blog__date">14<br>NOV</h3>
+                    <h1 class="blog__article">Growing Food and "Thirst" for Innovation</h1>
+                    <h2 class="blog__time">By Auskteez - 3 hours ago</h2>
+                    <img src="img/blog/blog2.png" alt="growing food">
+                </figure>
+                <figure>
+                    <h3 class="blog__date">10<br>NOV</h3>
+                    <h1 class="blog__article">Pesticides & Food: What you Need to Know</h1>
+                    <h2 class="blog__time">By Auskteez - 6 hours ago</h2>
+                    <img src="img/blog/blog3.png" alt="Pesticides&food">
+                </figure>
+            </div>
+            <input class="blog__button" type="button" value="VIEW MORE">
+
+        </section>
+        <section id="contact">
+            <div class="col-10 col-sm-8 col-md-6 col-lg-3 header" data-aos="fade-up">
+                <h1>Contact</h1>
+                <p>For new projects, ideas, business or anything
+                    you'd like to discuss, contact with me!</p>
+            </div>
+            <div class="row justify-content-center mt-5">
+                <div class=" order-md-2 col-10 col-sm-7
+                col-md-4 col-lg-3 offset-md-1 information">
+                    <div class="information__part">
+                        <h3 class="information__title">Addres</h3>
+                        <p class="information__data">123 City name, Street, City, Country</p>
+                    </div>
+                    <div class="information__part">
+                        <h3 class="information__title">Email</h3>
+                        <p class="information__data">cahee@domain.com</p>
+                    </div>
+                    <div class="information__part">
+                        <h3 class="information__title">Phone</h3>
+                        <p class="information__data">+012 345 6789</p>
+                    </div>
+                </div>
+
+                <form class=" order-md-1 col-11 col-sm-7 
+                col-md-5 col-lg-4 col-xl-3  pt-md-0  contactForm ">
+                    <label><input type="text" class="contactForm__input" placeholder="Your name..."><div></div></label>
+                    <label><input type="email" class="contactForm__input" placeholder="Your email..."><div></div></label>
+                    <label><input type="number" class="contactForm__input" placeholder="Your phone number..."><div></div></label>
+                    <label><textarea class="contactForm__textarea" placeholder="Your phone number"></textarea><div></div></label>
+                </form>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="row">
+                <div class="footer__rights col-12 col-sm-4">&copy; 2019 Company. All right reserved.</div>
+                <div class="footer__brand col-12 col-sm-4"><img src="img/logo-small.png" alt="logo"></div>
+                <div class="footer__author col-12 col-sm-4">Made with  <span>love</span> by Piotr Wolanin</div>
+            </div>
+        </footer>
+    </div>
 
 
 
